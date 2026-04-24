@@ -31,3 +31,13 @@ def crear_pedido(data):
     db.session.commit()
 
     return pedido
+
+def crear_pedido(clienteId, productos):
+    # Simulación de creación de pedido SOLO para el controlador de crear pedido
+    pedido = {
+        'id': 1,  # En un caso real, esto sería generado por la base de datos
+        'clienteId': clienteId,
+        'productos': productos,
+        'fecha': '2026-04-24'
+    }
+    return pedido
